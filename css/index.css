@@ -1,0 +1,591 @@
+#wrapper {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+header {
+  height: 200px;
+  box-sizing: border-box;
+
+  & > div {
+    box-sizing: border-box;
+
+    & > * {
+      width: 1126px;
+      height: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+  }
+
+  & > div:nth-child(1) {
+    height: 44px;
+    background: #f3f3f3;
+
+    & .top {
+      display: flex;
+      width: 152px;
+      height: 100%;
+      margin-left: auto;
+      margin-right: 6px;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+
+  & > div:nth-child(2) {
+    height: 110px;
+
+    & > section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & > a:nth-child(2) {
+        position: relative;
+        top: 4px;
+      }
+    }
+  }
+
+  & > div:nth-child(3) {
+    height: 46px;
+    background: #564f47;
+
+    & .gnb {
+      display: flex;
+      height: 100%;
+
+      & > li {
+        flex: 1;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #464545;
+
+        &:hover {
+          background: #396340;
+          & > a {
+            color: #fff;
+            font-size: 16px;
+          }
+        }
+
+        & > a {
+          color: #b0a171;
+          font-family: arial;
+          font-size: 15px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  & .ico.user {
+    background-position: 0 -504px;
+    width: 17px;
+    height: 17px;
+    position: relative;
+    top: 2px;
+  }
+
+  & .ico.cart {
+    background-position: 0 -487px;
+    width: 17px;
+    height: 17px;
+  }
+
+  & .ico.wish {
+    background-position: 0 -539px;
+    width: 20px;
+    height: 18px;
+  }
+
+  & .ico {
+    display: inline-block;
+    background-image: url(../images//sprites.png);
+
+    & .label {
+      position: relative;
+      left: 22px;
+      display: block;
+      width: 16px;
+      height: 16px;
+      background: #ff6e53;
+      border-radius: 50%;
+      text-align: center;
+      color: white;
+      font-size: 11px;
+    }
+  }
+}
+
+main {
+  & .price {
+    color: #ef9120;
+    font-size: 30px;
+    &::after {
+      content: "원";
+      color: #ef9120;
+      font-size: 18px;
+    }
+  }
+
+  box-sizing: border-box;
+
+  & > section > h3 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 27px;
+    color: #564f47;
+
+    & > strong {
+      font-size: 27px;
+      font-weight: bold;
+      color: #699270;
+    }
+  }
+
+  & > .new > article {
+    display: grid;
+    grid-template: 240px 240px / 434px 345px 345px;
+
+    & > div {
+      box-sizing: border-box;
+
+      &:first-child {
+        grid-column: 1/2;
+        grid-row: 1/3;
+      }
+    }
+  }
+
+  & > .banner > article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    & > div {
+      & > img:nth-child(1) {
+        position: relative;
+        top: -44px;
+      }
+      & > img:nth-child(2) {
+        position: relative;
+        top: -16px;
+      }
+    }
+  }
+
+  & > .new {
+    & div > span {
+      position: absolute;
+    }
+    & div > img {
+      position: absolute;
+    }
+
+    & div > .price {
+      color: #ef9120;
+      font-size: 30px;
+      &::after {
+        content: "원";
+        color: #ef9120;
+        font-size: 18px;
+      }
+    }
+
+    & > article {
+      border: 1px solid #d4d4d4;
+
+      & > div {
+        position: relative;
+        box-sizing: border-box;
+      }
+
+      & > div:nth-child(1) {
+        background-image: url(../images/main_new_img1.jpg);
+
+        & .txt {
+          left: 40px;
+          top: 60px;
+          font-size: 27px;
+          color: #564f47;
+        }
+
+        & .tit {
+          left: 40px;
+          top: 116px;
+          font-size: 26px;
+          color: white;
+          padding: 4px 6px;
+          background-image: url(../images/bg_transparent.png);
+
+          & > strong {
+            font-size: 32px;
+            color: #c3d069;
+            font-weight: bold;
+          }
+        }
+
+        & .price {
+          right: 20px;
+          bottom: 20px;
+        }
+      }
+
+      & > div:nth-child(2) {
+        border-right: 1px solid #d4d4d4;
+        border-bottom: 1px solid #d4d4d4;
+
+        & > img {
+          left: 20px;
+          top: 20px;
+        }
+
+        & > .txt {
+          left: 130px;
+          top: 40px;
+          font-size: 16px;
+          color: #564f47;
+        }
+
+        & > .tit {
+          left: 130px;
+          top: 90px;
+          font-size: 28px;
+          color: #899b34;
+        }
+
+        & > .price {
+          right: 20px;
+          bottom: 20px;
+        }
+      }
+
+      & > div:nth-child(3) {
+        border-bottom: 1px solid #d4d4d4;
+
+        & > img {
+          right: 10px;
+          bottom: 10px;
+        }
+
+        & > .txt {
+          left: 30px;
+          top: 40px;
+          font-size: 16px;
+          color: #564f47;
+        }
+
+        & > .tit {
+          left: 30px;
+          top: 70px;
+          font-size: 28px;
+          color: #358a00;
+        }
+
+        & > .price {
+          left: 20px;
+          bottom: 20px;
+        }
+      }
+
+      & > div:nth-child(4) {
+        border-right: 1px solid #d4d4d4;
+
+        & > img {
+          right: 0;
+          bottom: 0;
+        }
+
+        & > .txt {
+          left: 30px;
+          top: 30px;
+          font-size: 16px;
+          color: #564f47;
+        }
+
+        & > .tit {
+          left: 30px;
+          top: 80px;
+          font-size: 28px;
+          color: #c51a1a;
+        }
+
+        & > .price {
+          left: 30px;
+          bottom: 20px;
+        }
+      }
+
+      & > div:nth-child(5) {
+        & > img {
+          right: 0;
+          bottom: 0;
+          z-index: -1;
+        }
+
+        & > .txt {
+          left: 30px;
+          top: 30px;
+          font-size: 16px;
+          color: #564f47;
+        }
+
+        & > .tit {
+          left: 30px;
+          top: 80px;
+          font-size: 28px;
+          color: #9e7839;
+        }
+
+        & > .price {
+          left: 30px;
+          bottom: 20px;
+        }
+      }
+    }
+  }
+
+  & > .master {
+    background-image: url(../images/main_master_bg.png);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    & img {
+      width: 100%;
+      height: auto;
+    }
+
+    & p {
+      width: 100%;
+      margin-top: 6px;
+      font-size: 14px;
+      color: #564f47;
+      box-sizing: border-box;
+
+      & > .name {
+        display: block;
+        margin-top: 6px;
+        font-size: 20px;
+        color: #564f47;
+      }
+    }
+
+    & > article {
+      display: flex;
+
+      & > div {
+        flex: 1;
+        height: 334px;
+        box-sizing: border-box;
+        background-color: #fff;
+        border: 1px solid #d4d4d4;
+        padding: 6px;
+      }
+
+      & > div:nth-child(1) {
+      }
+    }
+  }
+
+  & > .organic_banner {
+    position: relative;
+    background-image: url(../images/main_organic_bg.png);
+    background-size: cover;
+    background-position: center;
+
+    & > img {
+      position: absolute;
+      left: 50%;
+      top: 50px;
+      margin-left: -180px;
+    }
+  }
+  & > .organic {
+    padding: 40px 0;
+
+    & .price {
+      color: #4f4f4f;
+      font-size: 18px;
+      &::after {
+        content: "원";
+        color: #4f4f4f;
+        font-size: 16px;
+      }
+    }
+  }
+  & .gallary {
+    display: grid;
+    grid-template: repeat(2, 400px) / repeat(4, 281px);
+
+    & > div {
+      position: relative;
+      padding: 4px;
+      border: 1px solid #fff;
+      box-sizing: border-box;
+      cursor: pointer;
+
+      & > span {
+        position: absolute;
+        display: block;
+      }
+
+      &:hover {
+        border: 1px solid #d4d4d4;
+        box-sizing: border-box;
+      }
+
+      & > img {
+        width: 100%;
+        height: 265px;
+        object-fit: cover;
+      }
+
+      & > .tit {
+        left: 4px;
+        bottom: 90px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      & > .txt {
+        left: 4px;
+        bottom: 64px;
+        font-size: 16px;
+        color: #747373;
+        width: 90%;
+        text-overflow: ellipsis;
+        white-space-collapse: collapse;
+        text-wrap: nowrap;
+        overflow: hidden;
+      }
+
+      & > .price {
+        right: 10px;
+        bottom: 10px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  & > .grain_banner {
+    position: relative;
+    background-image: url(../images/main_grain_bg.png);
+    background-size: cover;
+    background-position: center;
+
+    & > img {
+      position: absolute;
+      left: 50%;
+      top: 50px;
+      margin-left: -180px;
+    }
+  }
+
+  & > .grain > article {
+    & > div {
+      & > img {
+        width: 100%;
+        height: 256px;
+        object-fit: cover;
+      }
+
+      & > .tit {
+        left: 4px;
+        bottom: 90px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      & > .txt {
+        left: 4px;
+        bottom: 64px;
+        font-size: 16px;
+        color: #747373;
+        width: 90%;
+        text-overflow: ellipsis;
+        white-space-collapse: collapse;
+        text-wrap: nowrap;
+        overflow: hidden;
+      }
+
+      & > .price {
+        color: #4f4f4f;
+        font-size: 18px;
+        &::after {
+          content: "원";
+          color: #4f4f4f;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  & > section {
+    padding: 40px 0;
+    box-sizing: border-box;
+
+    & > article {
+      width: 1126px;
+      height: 100%;
+      box-sizing: border-box;
+      margin: 0 auto;
+    }
+  }
+
+  & > section:nth-child(1) {
+    height: 480px;
+  }
+  & > section:nth-child(2) {
+    height: auto;
+  }
+  & > section:nth-child(3) {
+    height: 620px;
+  }
+  & > section:nth-child(4) {
+    height: 220px;
+  }
+  & > section:nth-child(5) {
+  }
+  & > section:nth-child(6) {
+    height: 220px;
+  }
+  & > section:nth-child(7) {
+  }
+}
+
+footer {
+  height: 214px;
+  background-color: #f3f3f3;
+  box-sizing: border-box;
+
+  & > div {
+    padding-top: 20px;
+    width: 1126px;
+    height: 210px;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    & > img {
+      float: left;
+    }
+
+    & > p {
+      float: left;
+      margin-left: 60px;
+      margin-top: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #aca9a9;
+      text-align: left;
+      line-height: 22px;
+    }
+  }
+}
